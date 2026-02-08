@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --header-height: 110px;
+  --header-height-mobile: 100px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.home-banner {
+  height: 100svh;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+}
+
+/* Hero sections that should extend behind the fixed header */
+.hero-section {
+  margin-top: calc(-1 * var(--header-height));
+  padding-top: var(--header-height);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    margin-top: calc(-1 * var(--header-height-mobile));
+    padding-top: var(--header-height-mobile);
+  }
+}
+
+/* Non-hero pages that need top spacing */
+.page-content {
+  padding-top: var(--header-height);
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding-top: var(--header-height-mobile);
+  }
+}
+
+/* Raleway font for all headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-raleway), 'Raleway', sans-serif;
+}

@@ -11,6 +11,7 @@ import NewsSection from "./components/Home/NewsSection";
 import Testimonials from "./components/Program/Testimonials";
 import CampusSection from "./components/About/CampusSection";
 import FacilitiesSection from "./components/Home/FacilitiesSection";
+import CounterBar from "./components/Home/CounterBar";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <AnnouncementBanner />
       <StatSection />
       <AboutSection />
-      <StatsBar />
+      <CounterBar />
       <CourseGrid />
       <AtomAdvantage />
       <CampusSection />

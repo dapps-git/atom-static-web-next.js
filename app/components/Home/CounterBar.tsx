@@ -42,18 +42,18 @@ const Counter = ({ value, suffix = "" }: { value: number; suffix?: string }) => 
     );
 };
 
-const StatsBar = () => {
+const CounterBar = () => {
     const [mobileIndex, setMobileIndex] = useState(0);
 
     const stats = [
         {
             label: "Students Empowered",
-            value: 500,
+            value: 1000,
             icon: <GraduationCap size={28} strokeWidth={1.5} />
         },
         {
             label: "Expert Faculty",
-            value: 50,
+            value: 25,
             icon: <UserCheck size={28} strokeWidth={1.5} />
         },
         {
@@ -144,4 +144,4 @@ const StatsBar = () => {
     );
 };
 
-export default StatsBar;
+export default CounterBar;

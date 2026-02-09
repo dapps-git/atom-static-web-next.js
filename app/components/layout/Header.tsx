@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone, MapPin, Menu, X, ChevronRight, MessageCircle, Smartphone, AtSign, Navigation } from "lucide-react";
+import { Mail, Phone, MapPin, Menu, X, ChevronRight, MessageCircle, Smartphone, AtSign, Navigation} from "lucide-react";
 import Image from "next/image";
 import { contactInfo, navLinks } from "@/app/data/contactData";
 
@@ -81,9 +81,13 @@ const Header = () => {
 
                     {/* Email */}
                     <a href={`mailto:${contactInfo.email}`} className="flex items-center gap-1.5 sm:gap-2 hover:opacity-80 transition-opacity">
-                        <AtSign size={14} className="sm:w-[15px] sm:h-[15px]" strokeWidth={2.5} />
+                        <Mail
+                        size={14}
+                        className="sm:w-[15px] sm:h-[15px]"
+                        strokeWidth={2.5}
+                        />
                         <span className="hidden xs:inline">{contactInfo.email}</span>
-                        <span className="xs:hidden">Email Us</span>
+                        <span className="xs:hidden">atomeducation25@gmail.com</span>
                     </a>
 
                     <div className="hidden md:block h-4 w-[1px] bg-white/30 mx-4 lg:mx-8" />
@@ -96,7 +100,8 @@ const Header = () => {
                         className="hidden sm:flex items-center gap-1.5 sm:gap-2 hover:opacity-80 transition-opacity"
                     >
                         <Navigation size={14} className="sm:w-[15px] sm:h-[15px]" strokeWidth={2.5} />
-                        <span>Calicut Road, Valanchery</span>
+                        <span>
+                        KPM Arcade, 2nd Floor,Calicut Road, Valanchery</span>
                     </a>
                 </div>
             </motion.div>

@@ -11,7 +11,7 @@ export default function AboutPage() {
             <AboutHero />
             <AboutContent />
             <CampusSection />
-            <TeamSection />
+            {/* <TeamSection /> */}
             <StatsBar />
         </>
     );

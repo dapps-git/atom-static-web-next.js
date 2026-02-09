@@ -4,10 +4,11 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
+
 interface Achievement {
   id: number;
   name: string;
-  rank: string;
+  // rank: string;
   institution: string;
   testimonial: string;
   image: string;
@@ -16,27 +17,25 @@ interface Achievement {
 const achievements: Achievement[] = [
   {
     id: 1,
-    name: "Anaga",
-    rank: "AIR 234",
-    institution: "AIIMS Delhi",
+    name: "Sana Ashli",
+    institution: "MBBS Student KMCT mukkam",
     testimonial: "The structured approach and dedicated mentorship helped me achieve my dream of getting into AIIMS. The faculty's support was incredible throughout my preparation journey.",
-    image: "/slider-img-one.svg"
+    image: "/sana-ashli.jpeg"
   },
   {
     id: 2,
-    name: "Rahul Kumar",
-    rank: "AIR 156",
-    institution: "JIPMER",
+    name: "Gouri Nandhana",
+    institution: "Govt veterinary and animal sciences university(KVASU)",
     testimonial: "ATOM Academy transformed my preparation strategy completely. The personalized attention and expert guidance made all the difference in my NEET journey.",
-    image: "/slider-img-two.svg"
+    image: "/Guari.jpeg"
   },
+ 
   {
     id: 3,
-    name: "Priya Singh",
-    rank: "AIR 312",
-    institution: "AIIMS Jodhpur",
+    name: "Madeeha",
+    institution: "Student  Christian Medical college(CMC) vellore",
     testimonial: "The comprehensive study material and regular mock tests helped me identify my weak areas. I'm grateful to the entire ATOM team for their unwavering support.",
-    image: "/slider-img-three.svg"
+    image: "/madheha.jpeg"
   },
 ];
 
@@ -188,9 +187,7 @@ export default function SuccessStories() {
                       {achievements[index].name}
                     </h3>
                     <div className="flex items-center gap-3">
-                      <span className="px-4 py-1.5 bg-gradient-to-r from-[#EB1414] to-[#ff6b6b] text-white text-sm font-bold rounded-full shadow-lg shadow-red-500/25">
-                        {achievements[index].rank}
-                      </span>
+                    
                       <span className="text-gray-600 font-medium">
                         {achievements[index].institution}
                       </span>
@@ -252,9 +249,7 @@ export default function SuccessStories() {
                       {achievements[index].name}
                     </h3>
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="px-3 py-1 bg-gradient-to-r from-[#EB1414] to-[#ff6b6b] text-white text-xs font-bold rounded-full shadow-lg shadow-red-500/25">
-                        {achievements[index].rank}
-                      </span>
+                   
                       <span className="text-gray-600 text-sm font-medium">
                         {achievements[index].institution}
                       </span>

@@ -19,24 +19,24 @@ const staggerContainer = {
 
 const teamMembers = [
     {
-        name: "Expert Faculty",
-        role: "Teaching Excellence",
+        name: "Deepa T",
+        role: "MTech, Director &  Academic Coordinator",
+        image: "/atom-web-profile-four.jpeg"
+    },
+    {
+        name: "Jemseera Kallingal",
+        role: "MTech, CEO",
+        image: "/jamsheera.jpeg"
+    },
+    {
+        name: "Nasar Alukkal",
+        role: "Director",
         image: "/atom-web-profile-one.jpeg"
     },
     {
-        name: "Academic Mentors",
-        role: "Student Guidance",
+        name: "Thahir Zain",
+        role: "Director",
         image: "/atom-web-profile-two.jpeg"
-    },
-    {
-        name: "Support Team",
-        role: "Administrative Support",
-        image: "/atom-web-profile-three.jpeg"
-    },
-    {
-        name: "Support Team",
-        role: "Administrative Support",
-        image: "/atom-web-profile-four.jpeg"
     }
 ];
 
@@ -72,7 +72,7 @@ const TeamSection = () => {
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
                     variants={staggerContainer}
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
                 >
                     {teamMembers.map((member, index) => (
                         <motion.div

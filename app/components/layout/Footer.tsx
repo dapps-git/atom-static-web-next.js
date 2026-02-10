@@ -1,3 +1,4 @@
+    //footer
     "use client";
 
     import React from 'react';
@@ -11,7 +12,7 @@
         FaMapMarkerAlt,
         FaPhoneAlt,
         FaEnvelope,
-        FaWhatsapp
+        FaWhatsappgit config --list | grep credential
     } from 'react-icons/fa';
     import { contactInfo, quickLinks, programLinks } from '@/app/data/contactData';
 

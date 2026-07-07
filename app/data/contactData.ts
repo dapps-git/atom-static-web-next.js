@@ -45,6 +45,7 @@ export const navLinks = [
     { name: "Program", href: "/programs" },
     { name: "Campus", href: "/campus" },
     { name: "Admission", href: "/admission" },
+    { name: "Results", href: "/results" },
     { name: "Contact", href: "/contact" }
 ];
 
@@ -67,6 +68,7 @@ export const quickLinks = [
     { name: "Programs", href: "/programs" },
     { name: "Campus", href: "/campus" },
     { name: "Admission", href: "/admission" },
+    { name: "Results", href: "/results" },
     { name: "Contact Us", href: "/contact" }
 ];
 

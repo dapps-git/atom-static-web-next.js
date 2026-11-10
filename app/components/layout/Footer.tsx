@@ -198,6 +198,18 @@
                     {/* Bottom Bar */}
                     <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 space-y-4 md:space-y-0">
                         <p>© {currentYear} ATOM Education. All rights reserved.</p>
+
+        <p className="mt-2 text-xs opacity-75 text-center">
+          Powered by{" "}
+          <a
+            href="https://www.crevionads.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium underline hover:opacity-100 transition-opacity"
+          >
+            Crevion Ads
+          </a>
+        </p>
                         <div className="flex space-x-6">
                             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
